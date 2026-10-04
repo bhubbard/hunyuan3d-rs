@@ -1,0 +1,13 @@
+/target
+**/*.rs.bk
+*.tmp
+Cargo.lock
+.DS_Store
+*.png
+*.jpg
+*.jpeg
+*.obj
+*.mtl
+*.ply
+*.glb
+!Cargo.toml

@@ -1,0 +1,26 @@
+pub mod api;
+pub mod camera;
+pub mod cli;
+pub mod dit;
+pub mod error;
+pub mod flow;
+pub mod io;
+pub mod marching_cubes;
+pub mod math;
+pub mod mesh;
+pub mod painter;
+pub mod pbr;
+pub mod pipeline;
+pub mod rasterizer;
+pub mod server;
+
+pub use camera::Camera;
+pub use error::{HunyuanError, Result};
+pub use io::{load_obj, load_ply, save_glb, save_obj, save_ply};
+pub use marching_cubes::{MarchingCubes, ScalarGrid3D};
+pub use math::BoundingBox3D;
+pub use mesh::Mesh;
+pub use painter::{BakeConfig, TexturePainter};
+pub use pbr::PBRMaterial;
+pub use pipeline::{Hunyuan3DCombinedPipeline, Hunyuan3DPaintPipeline, Hunyuan3DShapePipeline, ShapeGenConfig};
+pub use rasterizer::{RenderBuffer, SoftwareRasterizer};
